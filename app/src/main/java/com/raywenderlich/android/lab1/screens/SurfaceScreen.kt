@@ -8,6 +8,13 @@ import androidx.compose.ui.Modifier
 import com.raywenderlich.android.lab1.router.BackButtonHandler
 import com.raywenderlich.android.lab1.router.FundamentalsRouter
 import com.raywenderlich.android.lab1.router.Screen
+import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.layout.size
+import androidx.compose.material.Surface
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.unit.dp
+import com.raywenderlich.android.lab1.R
 @Composable
 fun SurfaceScreen(modifier: Modifier = Modifier){
 
@@ -22,5 +29,13 @@ fun SurfaceScreen(modifier: Modifier = Modifier){
 
 @Composable
 fun MySurface(modifier: Modifier){
-
+    Surface(
+        modifier = modifier.size(100.dp),
+        color = Color.LightGray,
+        contentColor = colorResource(id = R.color.colorPrimary),
+        elevation = 1.dp,
+        border = BorderStroke(1.dp, Color.Black))
+    {
+        MyColumn()
+    }
 }
