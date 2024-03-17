@@ -19,5 +19,6 @@
     <string name="button_column">Контейнер Column</string>
     <string name="button_box">Контейнер Box</string>
     <string name="button_surface">Контейнер Surface</string>
+    <string name="button_scaffold">Контейнер Scaffold</string>
 
 </resources>
